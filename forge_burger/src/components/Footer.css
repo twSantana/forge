@@ -1,0 +1,130 @@
+/* ---------- CTA ---------- */
+.cta {
+  position: relative;
+  padding: clamp(7rem, 16vw, 12rem) 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.cta__glow {
+  position: absolute;
+  left: 50%;
+  bottom: -40%;
+  width: 1200px;
+  height: 700px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(200, 96, 26, 0.22), rgba(200, 96, 26, 0) 65%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cta__title {
+  margin-top: 1.75rem;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(2.8rem, 8vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.cta__title em {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--accent);
+}
+
+.cta__text {
+  max-width: 460px;
+  margin-top: 1.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 2.75rem;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #0a0908;
+  padding: clamp(4rem, 8vw, 6rem) 0 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.footer__top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+
+.footer__brand {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: clamp(4.5rem, 16vw, 13rem);
+  line-height: 0.8;
+  letter-spacing: 0.06em;
+}
+
+.footer__tagline {
+  margin-top: 1.25rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.25rem;
+}
+
+.footer__links a {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.3s var(--ease);
+}
+
+.footer__links a:hover {
+  color: var(--accent);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.72rem;
+  color: rgba(212, 197, 169, 0.55);
+}
+
+.footer__note {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}

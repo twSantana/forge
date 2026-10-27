@@ -1,0 +1,112 @@
+/* ---------- Assembled burger wrapper ---------- */
+.burger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.burger-layer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.burger-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: -26px;
+  width: 340px;
+  height: 34px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(6px);
+  z-index: 0;
+}
+
+/* ---------- Shared layer visual ---------- */
+.lv {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Layer 7 — sesame top bun */
+.lv-bun-top {
+  width: 284px;
+  height: auto;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.45));
+}
+
+/* Layer 6 — ember sauce */
+.lv-sauce {
+  width: 280px;
+  height: 72px;
+  object-fit: fill;
+  filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.4));
+}
+
+/* Layer 5 — ruffled lettuce */
+.lv-lettuce {
+  width: 312px;
+  height: 90px;
+  object-fit: fill;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* Layer 4 — tomato slices */
+.lv-tomato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 276px;
+  height: 70px;
+}
+
+.lv-tomato .slice {
+  width: 146px;
+  height: 68px;
+  margin: 0 -35px;
+  object-fit: fill;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+}
+
+.lv-tomato .slice--1 {
+  transform: rotate(-12deg) translateY(3px);
+}
+
+.lv-tomato .slice--2 {
+  z-index: 1;
+  transform: translateY(-2px);
+}
+
+.lv-tomato .slice--3 {
+  transform: rotate(12deg) translateY(3px);
+}
+
+/* Layer 3 — melted cheddar */
+.lv-cheese {
+  width: 252px;
+  height: 118px;
+  object-fit: fill;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+}
+
+/* Layer 2 — seared wagyu patty */
+.lv-patty {
+  width: 272px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center 48%;
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.65));
+}
+
+/* Layer 1 — bottom bun */
+.lv-bun-bottom {
+  width: 282px;
+  height: 96px;
+  object-fit: fill;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.45));
+}
